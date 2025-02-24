@@ -1,70 +1,62 @@
 # Merge Sort Analysis
 
 ## Introduction
-Merge Sort is a divide-and-conquer sorting algorithm that recursively splits an array into smaller subarrays, sorts them, and then merges them back together. This project implements Merge Sort and analyzes its performance across different input sizes under best-case, worst-case, and average-case scenarios.
+This project implements and analyzes the Merge Sort algorithm by measuring its execution time for different input sizes and cases (Best, Worst, and Average).
 
-## Objective
-- Implement Merge Sort to sort an array of elements and determine the time required to sort.
-- Measure the execution time for different values of `n`.
-- Analyze the time complexity in best-case, worst-case, and average-case scenarios.
-- Plot a graph of time taken versus `n`.
+## Features
+- Implementation of Merge Sort in C++
+- Measurement of execution time
+- Analysis of time complexity for different input cases
+- Graph plotting using Python (Matplotlib)
 
-## Problem Description
-### Task:
-1. Write a program to sort a set of numbers using Merge Sort.
-2. Measure the time required to sort different values of `n`.
-3. Analyze the time complexity by varying the input size.
-4. Plot a graph of time taken versus `n`.
-
-### Input:
-- A set of numbers provided by the user.
-- Perform sorting for input sizes of `10, 20, 30, and 40` numbers.
-
-### Output:
-- Sorted arrays in ascending order.
-- Time count for sorting the numbers.
-- Graph of time taken versus `n`.
-
-## Cases Analyzed:
-- **Best Case:** Already sorted input.
-- **Worst Case:** Reverse sorted input.
-- **Average Case:** Randomized input.
-
-## Implementation
-The code is written in **C++** and uses the `chrono` library to measure the execution time. It includes functions for merging, sorting, and printing the array.
-
-## Requirements
-- C++ compiler (g++ recommended)
-- Python (for plotting graphs using Matplotlib, if required)
+## Files Included
+- `merge_sort.cpp` - C++ program implementing Merge Sort and measuring execution time.
+- `graph_plot.py` - Python script to plot execution time vs input size.
+- `README.md` - Project documentation.
 
 ## Compilation and Execution
-To compile and run the program, use:
-```bash
- g++ merge_sort.cpp -o merge_sort
- ./merge_sort
+### Running Merge Sort in C++
+1. Compile the code:
+   ```sh
+   g++ merge_sort.cpp -o merge_sort
+   ```
+2. Run the executable:
+   ```sh
+   ./merge_sort
+   ```
+
+### Running Graph Plotting in Python
+1. Ensure you have Python installed.
+2. Install required library:
+   ```sh
+   pip install matplotlib
+   ```
+3. Run the script:
+   ```sh
+   python graph_plot.py
+   ```
+
+## Example Input & Output
+### Input
+```
+Numbers: [35, 12, 48, 7, 22]
+```
+### Output
+```
+Sorted Array: [7, 12, 22, 35, 48]
+Step Count: (Depends on comparisons)
+Time Taken: (Varies per system)
 ```
 
-## Expected Output
-Example output:
-```
-Original Array: 35 12 48 7 22 
-Sorted Array: 7 12 22 35 48 
-Step Count: 10
-Time Taken: 50 microseconds
-```
+## Analysis Cases
+- **Best Case:** Already sorted input.
+- **Worst Case:** Reverse sorted input.
+- **Average Case:** Random input.
 
-## Graph Plotting
-To visualize the time complexity, use Python's Matplotlib to plot the execution time against input size.
-
-## Submission
-- Ensure the repository includes:
-  - `merge_sort.cpp` (Implementation file)
-  - `README.md` (Documentation)
-  - Sample outputs and graphs
-- Submit the GitHub repository link on Moodle before the due date.
+## Graph Representation
+The execution time is plotted against different input sizes (10, 20, 30, 40 elements) using Python's Matplotlib.
 
 ## Author
-- **Course:** Analysis and Design of Algorithms (ENCS202)
-- **Instructor:** Dr. Vandna Batra
-- **Batch:** 2023-2027
-- **Department:** School of Engineering & Technology, B.Tech CSE, Semester 4th
+- Developed for `Analysis and Design of Algorithms` Lab
+- Faculty: Dr. Vandna Batra
+- B.Tech CSE, Semester 4th, Batch 2023-2027
