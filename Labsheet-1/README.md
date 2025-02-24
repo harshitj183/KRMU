@@ -1,50 +1,47 @@
-# Sorting Algorithms Implementation (C++)
+# Sorting Algorithms Implementation
 
-## 📌 Introduction
-This repository contains C++ implementations of the following sorting algorithms:
-- **Bubble Sort**
-- **Selection Sort**
-- **Insertion Sort**
+This repository contains implementations of various sorting algorithms in C++. The sorting algorithms included are:
 
-Each algorithm is implemented in a separate file with a step count method to analyze their performance.
+1. **Bubble Sort**
+2. **Selection Sort**
+3. **Insertion Sort**
 
-## 📂 File Structure
-- `bubble_sort.cpp` → Implementation of Bubble Sort
-- `selection_sort.cpp` → Implementation of Selection Sort
-- `insertion_sort.cpp` → Implementation of Insertion Sort
-- `graph_plot.py` → Python script to plot the step count vs input size
-- `README.md` → Documentation and instructions
+Each algorithm includes:
+- Sorting a given array in ascending order.
+- Step count calculation to analyze efficiency.
+- Implementation with proper comments for understanding.
 
-## 🚀 How to Run the Code
-1. **Compile and Run C++ Files**
-   ```sh
-   g++ bubble_sort.cpp -o bubble_sort && ./bubble_sort
-   g++ selection_sort.cpp -o selection_sort && ./selection_sort
-   g++ insertion_sort.cpp -o insertion_sort && ./insertion_sort
-   ```
-2. **Run Python Script for Graphs**
-   ```sh
-   python3 graph_plot.py
-   ```
+## Files Included
+- `bubble_sort.cpp` - Implements Bubble Sort
+- `selection_sort.cpp` - Implements Selection Sort
+- `insertion_sort.cpp` - Implements Insertion Sort
 
-## 📊 Step Count Analysis
-Each algorithm records the number of comparisons and swaps performed. These step counts are used to analyze the performance of sorting techniques in best, worst, and average cases.
+## Compilation and Execution
+To compile and run any sorting algorithm, use the following commands:
 
-## 📈 Performance Comparison
-| Input Size | Bubble Sort Steps | Selection Sort Steps | Insertion Sort Steps |
-|------------|------------------|----------------------|----------------------|
-| 10         | XX               | XX                   | XX                   |
-| 20         | XX               | XX                   | XX                   |
-| 30         | XX               | XX                   | XX                   |
-| 40         | XX               | XX                   | XX                   |
+```sh
+# Compile
+g++ -o bubble_sort bubble_sort.cpp
 
-## 🛠️ Contributions
-Feel free to contribute by optimizing the algorithms or adding new features.
+# Run
+./bubble_sort
+```
 
-## 📜 License
-This project is open-source and available under the MIT License.
+Similarly, replace `bubble_sort.cpp` with `selection_sort.cpp` or `insertion_sort.cpp` to execute other sorting algorithms.
 
----
-📌 **Author:** Your Name
-📌 **GitHub Repo:** [Add Link Here]
+## Step Count Analysis
+Each sorting algorithm counts the number of key operations (comparisons, swaps, or assignments) performed during execution. These counts help analyze time complexity:
+- **Best Case**: Already sorted input.
+- **Worst Case**: Reverse sorted input.
+- **Average Case**: Random input.
 
+## Graphical Analysis
+To visualize the step count comparison:
+- Run the sorting algorithms for different input sizes (10, 20, 30, 40 elements).
+- Plot graphs of **Input Size vs. Step Count** for better understanding.
+
+## Author
+Developed for the **Analysis and Design of Algorithms** course (ENCS202) at SOET, B.Tech CSE.
+
+## License
+This project is open-source and free to use for educational purposes.
